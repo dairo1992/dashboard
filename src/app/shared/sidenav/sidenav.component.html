@@ -1,1 +1,8 @@
-<p>sidenav works!</p>
+<ul class="layout-menu">
+    @for (item of model; track $index) {
+    <ng-container>
+        <li>{{item.items}}</li>
+        <li class="menu-separator"></li>
+    </ng-container>
+    }
+</ul>
