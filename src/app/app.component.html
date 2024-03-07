@@ -1,2 +1,24 @@
-<!-- <app-topbar></app-topbar> -->
-<app-sidenav></app-sidenav>
+<!-- <div class="layout-wrapper">
+    <app-topbar></app-topbar>
+    <div class="layout-sidebar">
+        
+    </div>
+    <div class="layout-main-container">
+        <div class="layout-main">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <div class="layout-mask"></div>
+</div> -->
+<div
+    class="flex bg-slate-100 text-black overflow-y-scroll w-screen h-screen antialiased selection:bg-blue-600 selection:text-white">
+    <app-topbar></app-topbar>
+    <div class="flex relative layout-sidebar">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="layout-main-container">
+        <div class="card layout-main">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

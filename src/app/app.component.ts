@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { PrimeNGConfig } from 'primeng/api';
 import { TopbarComponent } from './shared/topbar/topbar.component';
 import { SidenavComponent } from './shared/sidenav/sidenav.component';
-import { AppMenuitemComponent } from './shared/app.menuitem.component';
+// import { AppMenuitemComponent } from './shared/app.menuitem.component';
 
 @Component({
   selector: 'app-root',
