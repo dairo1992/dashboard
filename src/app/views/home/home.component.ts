@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './home.component.html',
   styles: ``,
 })
-export default class HomeComponent {
-  
-}
+export default class HomeComponent {}

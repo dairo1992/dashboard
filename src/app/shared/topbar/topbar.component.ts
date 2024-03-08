@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
-import { LayoutService } from '../../services/app.layout.service';
+import { LayoutService } from '../../services/shredServices/app.layout.service';
 import { MenuModule } from 'primeng/menu';
 import { ButtonModule } from 'primeng/button';
 
