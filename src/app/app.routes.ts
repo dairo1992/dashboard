@@ -12,6 +12,7 @@ export const routes: Routes = [
       {
         path: 'usuarios',
         title: 'Usuarios',
+        // outlet: 'pi pi-fw pi-user',
         loadComponent: () => import('./views/usuarios/usuarios.component'),
       },
       {
