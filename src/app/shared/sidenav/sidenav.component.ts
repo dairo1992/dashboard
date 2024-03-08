@@ -1,5 +1,4 @@
-import { Component, ElementRef, OnInit } from '@angular/core';
-import { LayoutService } from '../../services/shredServices/app.layout.service';
+import { Component, OnInit } from '@angular/core';
 import { MenuModule } from 'primeng/menu';
 import { routes } from '../../app.routes';
 import { PanelMenuModule } from 'primeng/panelmenu';
@@ -26,17 +25,14 @@ export class SidenavComponent implements OnInit {
       ],
     },
   ];
-
-  active = false;
-  public menuItems: any;
-  constructor(public layoutService: LayoutService, public el: ElementRef) {}
   ngOnInit() {
     routes.forEach((item) => {
       if (item.title) {
         const newItem: any = {
           label: item.title,
           expanded: true,
-          icon: item.title == 'USUARIOS' ? 'pi pi-fw pi-user' : 'pi pi-fw pi-users',
+          icon:
+            item.title == 'USUARIOS' ? 'pi pi-fw pi-user' : 'pi pi-fw pi-users',
           separator: true,
           items: [],
         };
@@ -53,9 +49,4 @@ export class SidenavComponent implements OnInit {
       }
     });
   }
-
-  // get submenuAnimation() {
-  //   console.log(this.root);
-  //   return this.root ? 'expanded' : this.active ? 'expanded' : 'collapsed';
-  // }
 }
